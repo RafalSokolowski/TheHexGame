@@ -1,0 +1,11 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Calibri;
+}
+
+p {
+    text-align: center;
+    margin: auto;
+    font-size: x-large;
+}
