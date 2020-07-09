@@ -1,5 +1,6 @@
 package pl.thgteam.thehexgame.battlefield;
 
+import org.springframework.stereotype.Service;
 import pl.thgteam.thehexgame.hex.Cord;
 import pl.thgteam.thehexgame.hex.enums.Type;
 
@@ -7,8 +8,10 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+@Service
 public class TestBattlefield {
-    public static void main(String[] args) {
+
+    public void start () {
 
         Map<Cord, Type> otherThanFree = new HashMap<>();
         otherThanFree.put(new Cord(0,0),Type.ROCKS);
@@ -25,6 +28,8 @@ public class TestBattlefield {
                 otherThanFree
         );
 
-        System.out.println(RawMap.printBattlefield(testMap.getBattlefield()));
+        System.out.println(
+                RawMap.printBattlefield(testMap.getBattlefield())
+        );
     }
 }
