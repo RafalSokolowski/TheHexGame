@@ -26,6 +26,33 @@
     <p>by Bere Nika, SolfugaSoft and Rav</p>
     <br/>
     <p>will be available shortly :)</p>
+    <br/>
+
+    <div th:each="f: ${firstBattlefield}">
+        <span th:text="${f.getKey()}">COORDINATE</span>
+        <span> = </span>
+        <span th:text="${f.getValue()}">HEX</span>
+    </div>
+
+    <br/>
+
+    <svg height="250" width="500">
+        <polygon class="hex_rocks" points="25,0 75,0 100,43 75,86 25,86 0,43"/>
+        <polygon class="hex" points="100,44 150,44 175,87 150,130 100,130 75,87"/>
+        <polygon class="hex_watter" points="25,87 75,87 100,130 75,173 25,173 0,130"/>
+        <polygon class="hex" points="100,130 150,130 175,173 150,216 100,216 75,173"/>
+    </svg>
+
+<!--    <span th:each="p:${one_polygon}"><polygon class="hex" points="p"></polygon></span>-->
+
+<!--    <div th:each="p:${one_polygon}">-->
+<!--        <span th:text="${p}">TEXT</span>-->
+<!--    </div>-->
+
+    <svg th:each="p:${one_polygon}" height="250" width="500">
+        <polygon class="hex" th:points="${p}">POLYGON</polygon>
+    </svg>
+
 </section>
 
 </body>

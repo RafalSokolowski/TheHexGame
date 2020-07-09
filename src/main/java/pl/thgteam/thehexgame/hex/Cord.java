@@ -16,6 +16,10 @@ public class Cord {
     public String toString() {
         return "(" + x + ", " + y + ")";
     }
+
+    public String createString () {
+        return x + "," + y;
+    }
 }
 
 

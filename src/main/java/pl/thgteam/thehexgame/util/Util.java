@@ -6,6 +6,8 @@ import pl.thgteam.thehexgame.hex.enums.Type;
 
 public class Util {
 
+    public static final double VAL = Math.sqrt(3) / 2;
+
     public static final String RESET = "\u001B[0m";
     public static final String RED = "\u001B[31m";
     public static final String BLUE = "\u001B[34m";

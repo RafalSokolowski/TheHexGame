@@ -9,3 +9,17 @@ p {
     margin: auto;
     font-size: x-large;
 }
+
+.hex {
+    fill: white;
+    stroke: grey;
+    stroke-width: 1px;
+}
+
+.hex_watter {
+    fill: dodgerblue;
+}
+
+.hex_rocks {
+    fill: slategray;
+}
