@@ -1,18 +1,19 @@
-package pl.thgteam.thehexgame.hex;
+package pl.thgteam.thehexgame.x_other;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.AllArgsConstructor;
+import pl.thgteam.thehexgame.hex.Location;
 
-@AllArgsConstructor
 @Getter
+@AllArgsConstructor
 public class Polygon {
 
-    private final Cord a;
-    private final Cord b;
-    private final Cord c;
-    private final Cord d;
-    private final Cord e;
-    private final Cord f;
+    private final Location a;
+    private final Location b;
+    private final Location c;
+    private final Location d;
+    private final Location e;
+    private final Location f;
 
     public String createString () {
         StringBuilder sb = new StringBuilder();

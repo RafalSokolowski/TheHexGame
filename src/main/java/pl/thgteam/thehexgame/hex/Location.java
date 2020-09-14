@@ -4,10 +4,10 @@ import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
-@AllArgsConstructor
 @Getter
+@AllArgsConstructor
 @EqualsAndHashCode
-public class Cord {
+public class Location {
 
     private final long x;   // horizontally on the map
     private final long y;   // vertically on the map

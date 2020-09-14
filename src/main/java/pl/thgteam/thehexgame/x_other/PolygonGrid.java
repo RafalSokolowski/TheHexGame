@@ -1,11 +1,10 @@
-package pl.thgteam.thehexgame.hex;
+package pl.thgteam.thehexgame.x_other;
 
 import lombok.AllArgsConstructor;
 
-import java.util.List;
 import java.util.function.BiConsumer;
 
-import static pl.thgteam.thehexgame.util.Util.VAL;
+import static pl.thgteam.thehexgame.util.Constans.SQR_3_BY_2;
 
 @AllArgsConstructor
 public class PolygonGrid {
@@ -15,7 +14,7 @@ public class PolygonGrid {
     private final double sideLength;
 
     double getCenterX() {
-        return 2 * VAL * sideLength * (columnNumber + (rowNumber % 2) * 0.5);
+        return 2 * SQR_3_BY_2 * sideLength * (columnNumber + (rowNumber % 2) * 0.5);
     }
 
     double getCenterY() {
@@ -26,11 +25,11 @@ public class PolygonGrid {
         double cx = getCenterX();
         double cy = getCenterY();
         f.accept(cx + 0, cy + sideLength);
-        f.accept(cx - VAL * sideLength, cy + 0.5 * sideLength);
-        f.accept(cx - VAL * sideLength, cy - 0.5 * sideLength);
+        f.accept(cx - SQR_3_BY_2 * sideLength, cy + 0.5 * sideLength);
+        f.accept(cx - SQR_3_BY_2 * sideLength, cy - 0.5 * sideLength);
         f.accept(cx + 0, cy - sideLength);
-        f.accept(cx + VAL * sideLength, cy - 0.5 * sideLength);
-        f.accept(cx + VAL * sideLength, cy + 0.5 * sideLength);
+        f.accept(cx + SQR_3_BY_2 * sideLength, cy - 0.5 * sideLength);
+        f.accept(cx + SQR_3_BY_2 * sideLength, cy + 0.5 * sideLength);
     }
 
 
