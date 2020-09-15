@@ -29,18 +29,9 @@ public class GenerateJson {
     public void toFile(String filePath, String fileName) {
         try {
             FileWriter fileWriter = new FileWriter(filePath + fileName);
-            fileWriter.write("jsonBattlefield.toString()");
+            fileWriter.write(jsonBattlefield.toString());
             fileWriter.flush();
             fileWriter.close();
-        } catch (IOException e) {
-            log.error("Can not write to file: " + e.getMessage());
-        }
-    }
-
-    public void toFile(String fileName) {
-        try {
-            FileWriter fileWriter = new FileWriter(fileName);
-            fileWriter.write(jsonBattlefield.toString());
         } catch (IOException e) {
             log.error("Can not write to file: " + e.getMessage());
         }

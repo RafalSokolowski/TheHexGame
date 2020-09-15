@@ -36,17 +36,16 @@ public class ManiTest {
 
 
         RawBattlefield rawRectangleMap = new RawBattlefield(7, 6, unavailable);
-
         System.out.println(rawRectangleMap.printBattlefield());
 
         GenerateJson generateJson = new GenerateJson(rawRectangleMap.getBattlefield());
-        JSONObject toBeSentToSolifugae = generateJson.getJsonBattlefield();
+        JSONObject toBeSentToSolfugaSoft = generateJson.getJsonBattlefield();
 
         System.out.println("The JSON version: ");
-        System.out.println(toBeSentToSolifugae);
+        System.out.println(toBeSentToSolfugaSoft);
 
-//        generateJson.toFile("C:\\Users\\Rav\\Desktop\\" + "Solifugae.txt");
-        generateJson.toFile("\\resources\\output" + "Solifugae.txt");
+//        generateJson.toFile("C:\\Users\\Rav\\Desktop\\", "SolfugaSoft.txt");
+        generateJson.toFile(".\\src\\main\\resources\\output\\", "SolfugaSoft.txt"); // only for work in progress solutions (not recommended)
 
     }
 }
