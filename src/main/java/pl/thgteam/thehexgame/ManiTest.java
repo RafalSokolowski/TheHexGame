@@ -44,7 +44,6 @@ public class ManiTest {
         System.out.println("The JSON version: ");
         System.out.println(toBeSentToSolfugaSoft);
 
-//        generateJson.toFile("C:\\Users\\Rav\\Desktop\\", "SolfugaSoft.txt");
         generateJson.toFile(".\\src\\main\\resources\\output\\", "SolfugaSoft.txt"); // only for work in progress solutions (not recommended)
 
     }
