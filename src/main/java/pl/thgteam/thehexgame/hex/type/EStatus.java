@@ -1,6 +1,6 @@
 package pl.thgteam.thehexgame.hex.type;
 
-public enum Status {
+public enum EStatus {
 
     OFF("This field is disabled"),
     WATER("There is water on the hex field"),
@@ -16,7 +16,7 @@ public enum Status {
 
     private String desc;
 
-    Status(String desc) {
+    EStatus(String desc) {
         this.desc = desc;
     }
 
